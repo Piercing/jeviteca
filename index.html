@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="jevitecaApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Jeviteca</title>
+
+	<!-- Cargo estilos 'bootstrap css' -->
+    <link rel="stylesheet" href="styles/css/bootstrap.css"/>
+	<!-- Cargo estilos 'propios css' -->
+    <link rel="stylesheet" href="styles/css/style.css"/>
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Jeviteca</h1>
+    </header>
+    <nav ng-controller="NavigationCtrl">
+        <ul class="nav nav-tabs">
+            <li role="presentation" ng-class="{ active: routeIsAlbums() }"><a href="#/albums"><h3>Álbumes</h3></a></li>
+            <li role="presentation" ng-class="{ active: routeIsBands() }"><a href="#/bands"><h3>Bandas</h3></a></li>
+            <li role="presentation" ng-class="{ active: routeIsGenres() }"><a href="#/genres"><h3>Géneros</h3></a></li>
+        </ul>
+    </nav>
+    <section app-view-segment="0">
+        <div ng-show="loadingContent()">
+            <h4>Cargando...</h4>
+        </div>
+    </section>
+</div>
+
+
+		<!--Cargo Librerías de Angular -->
+<script src="vendor/angular.js"></script>
+<script src="vendor/angular-route.min.js"></script>
+<!--<script src="vendor/angular-locale_es-es.js"></script>-->
+<script src="vendor/angular-route-segment.js"></script>
+
+<!-- Cargo Configuración de la aplicación 'app.js' -->
+<script src="scripts/app.js"></script>
+
+<!--Cargo Librerías de Terceros -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+
+<!-- Cargo Controladores '.js' -->
+<script src="scripts/controllers/AlbumsCtrl.js"></script>
+<script src="scripts/controllers/BandsCtrl.js"></script>
+<script src="scripts/controllers/GenresCtrl.js"></script>
+<script src="scripts/controllers/NavigationCtrl.js"></script>
+<script src="scripts/controllers/loadingContent.js"></script>
+<script src="scripts/controllers/AlbumsDetailsCtrl.js"></script>
+<script src="scripts/controllers/BandsDetailsCtrl.js"></script>
+<script src="scripts/controllers/ScoreCtrl.js"></script>
+
+<!-- Cargo Servicios '.js' -->
+<script src="scripts/services/RouteService.js"></script>
+
+<!-- Cargo Values '.js' -->
+<script src="scripts/values/Configuration.js"></script>
+
+<!-- Cargo Filtros '.js' -->
+<script src="scripts/filters/ThemesAlbum.js"></script>
+<script src="scripts/filters/DateAlbum.js"></script>
+<script src="scripts/filters/OriginBands.js"></script>
+<script src="scripts/filters/CountAlbums.js"></script>
+<script src="scripts/filters/TrackListAlbums.js"></script>
+
+<!-- Cargo Directivas '.js' -->
+<script src="scripts/directives/AlbumsDirective.js"></script>
+<script src="scripts/directives/BandsDirective.js"></script>
+<script src="scripts/directives/GenresDirective.js"></script>
+<script src="scripts/directives/Voting.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

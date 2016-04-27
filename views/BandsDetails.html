@@ -1,0 +1,14 @@
+<table class="table table-responsive">
+    <tbody>
+        <tr class="active">
+            <td><h2><a href="#/bands/">{{ bands.name }}</a></h2></td>
+            <td><h2>{{ albums.title }}</h2></td>
+            <td><h3><strong class="text-warning">Componentes: </strong></h3></td>
+            <td ng-repeat="member in bands.members"><h3>{{ member.name }}</h3></td>
+            <td>
+                <h3><input class="btn btn-default" type="button" ng-click="getWikipediaLink(bands.name)"
+                           value="Ver en Wikipedia"/></h3>
+            </td>
+        </tr>
+    </tbody>
+</table>
