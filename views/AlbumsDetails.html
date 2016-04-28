@@ -14,23 +14,19 @@
 			<div ng-controller="ScoreCtrl">
 				<h4><voting score="recoverStorage()"></voting></h4>
 				<h4>Votar:<select class="form-control" ng-model="saveStorage" ng-change="saveStore()">
-					<option value=" ">-</option>
-					<option value="0">0</option>
+					<option value="0" >0</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
 					<option value="5">5</option>
 				</select></h4>
-
 			</div>
-			<!-- score recibe los datos almacenados del local storage -->
 
 			<h4><input class="btn btn-default"
 			           type="button"
 			           ng-click="getYouTubeLink(albums.title)"
 			           value="Ver en YouTube"/></h4>
-
 		</td>
 	</tr>
 	</tbody>

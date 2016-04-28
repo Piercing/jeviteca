@@ -4,7 +4,7 @@ angular
 
         var numVotes       = 0;
         var sumVotes       = 0;
-        $scope.saveStorage = '0';
+        $scope.saveStorage = '-';
 
         $scope.saveStore = function () {
 
@@ -22,10 +22,8 @@ angular
         $scope.recoverStorage = function () {
 
             if ( typeof(Storage) !== 'undefined' ) {
-
-                // Recogemos la puntuación media del localStorage
+                // Devolvemos la puntuación media del localStorage
                 return localStorage.getItem( 'scoreAlbum' );
             }
         };
-
     } ] );
