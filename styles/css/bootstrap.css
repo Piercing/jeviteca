@@ -14,12 +14,9 @@ html {
 
 body {
     margin: 0;
-    background-image: url("../../images/foto_portada03.jpg") ;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    background-color:#464646; filter:alpha(opacity=20); opacity:.7;
+    background: #464646 url("../../images/foto_portada03.jpg") no-repeat fixed center center;
+    filter:alpha(opacity=20); opacity:.9;
 }
 
 article,

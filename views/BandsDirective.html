@@ -2,5 +2,8 @@
     <td>
         <h4><a href="#/bands/bands_details/{{ data.id }}">{{ data.name }}</a></h4>
     </td>
-    <td class="text-right"><h4>{{ data.origin | originBands}}</h4></td>
+    <td class="text-center"><h4>{{ data.origin | originBands}}</h4></td>
+    <td class="text-center">
+        <span favorite id="data.id" tipo="band"></span>
+    </td>
 </tr>

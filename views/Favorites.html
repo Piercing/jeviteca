@@ -1,0 +1,5 @@
+<div>
+	<span ng-if="::supportedBrowser()">
+		<span ng-click="changeSelection()" class="glyphicon" ng-class="{ 'glyphicon-star': isFavorite(), 'glyphicon-star-empty': !isFavorite() }"></span>
+	</span>
+</div>

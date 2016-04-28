@@ -1,7 +1,8 @@
-
-angular.module ( 'jevitecaApp' ).filter ( 'membersBands',
-    function () {
-        return function ( collection ) {
-            return  collection.join ( ', ' );
-        };
-    } );
+angular
+    .module( 'jevitecaApp' )
+    .filter( 'membersBands',
+        function () {
+            return function ( collection ) {
+                return collection.join( ', ' );
+            };
+        } );

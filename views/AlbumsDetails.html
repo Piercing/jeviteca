@@ -3,8 +3,8 @@
 	<tr class="active">
 		<td ROWSPAN=2>
 			<a href="#/albums/"> <img ng-src="{{ routeImage( albums.image ) }}"
-					width="800"
-					class="img-responsive"/></a>
+			                          width="800"
+			                          class="img-responsive"/></a>
 		</td>
 		<td>
 			<h2>{{ albums.title }}</h2>
@@ -12,10 +12,9 @@
 			</h4>
 
 			<div ng-controller="ScoreCtrl">
-				<h4><voting score="3"></voting></h4>
-				<h4>Votar:<select class="form-control"
-						ng-model="saveStorage"
-						ng-change="saveStore()">
+				<h4><voting score="recoverStorage()"></voting></h4>
+				<h4>Votar:<select class="form-control" ng-model="saveStorage" ng-change="saveStore()">
+					<option value=" ">-</option>
 					<option value="0">0</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -28,9 +27,9 @@
 			<!-- score recibe los datos almacenados del local storage -->
 
 			<h4><input class="btn btn-default"
-					type="button"
-					ng-click="getYouTubeLink(albums.title)"
-					value="Ver en YouTube"/></h4>
+			           type="button"
+			           ng-click="getYouTubeLink(albums.title)"
+			           value="Ver en YouTube"/></h4>
 
 		</td>
 	</tr>

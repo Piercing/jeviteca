@@ -1,6 +1,6 @@
-angular.module ( 'jevitecaApp' ).value ( 'configuracion', {
+angular.module( 'jevitecaApp' ).value( 'configuracion', {
 
-    "routeImage":'images/',
-    "routeUrl"  :'data/'
+    "routeImage": 'images/',
+    "routeUrl"  : 'data/'
 
 } );

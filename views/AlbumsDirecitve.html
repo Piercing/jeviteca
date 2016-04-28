@@ -1,7 +1,10 @@
 <tr>
-    <td><a href="#/albums/albums_details/{{ data.id}}">
-        <img ng-src="{{ routeImage(data.image) }}"
-             width="100" class="img-thumbnail"/></a></td>
-    <td><h4><a href="#/albums/albums_details/{{ data.id}}">{{ data.title }}</a></h4></td>
-    <td class="text-right"><h4>{{ data.year | dateAlbum }}</h4></td>
+    <td><a href="#/albums/albums_details/{{ data.id}}"><img ng-src="{{ routeImage(data.image) }}"
+                                                            width="70px"
+                                                            class="img-rounded"/></a></td>
+    <td><h4><a href="#/albums/albums_details/{{ data.id}}">{{ ::data.title }}</a></h4></td>
+    <td class="text-right"><h4>{{ ::data.year | dateAlbum }}</h4></td>
+    <td class="text-center">
+        <span favorite id="data.id" tipo="album"></span>
+    </td>
 </tr>

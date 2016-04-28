@@ -1,6 +1,13 @@
 <tr>
     <td><h4>{{ data.name }}</h4>
+
+
+    <td class="text-center" class="text-right"><h4>{{ data.albums | countAlbums}}</h4></td>
+    <td class="text-center">
         <h3><input class="btn btn-default btn-xs" type="button" ng-click="getWikipediaLink(data.name)"
-                   value="Ver en Wikipedia"/></h3></td>
-    <td class="text-right"><h4>{{ data.albums | countAlbums}}</h4></td>
+                   value="Ver en Wikipedia"/></h3>
+    </td>
+    <td>
+        <span class="text-center" favorite id="data.id" tipo="genre"></span>
+    </td>
 </tr>

@@ -1,6 +1,8 @@
-angular.module ( 'jevitecaApp' ).filter ( 'trackListAlbums',
-    function () {
-        return function ( collection ) {
-            return collection.join ( ', ' );
-        };
-    } );
+angular
+    .module( 'jevitecaApp' )
+    .filter( 'trackListAlbums',
+        function () {
+            return function ( collection ) {
+                return collection.join( ', ' );
+            };
+        } );
